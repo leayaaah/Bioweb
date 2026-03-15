@@ -52,3 +52,26 @@ body {
   flex-direction: column;
   gap: 12px;
 }
+
+
+/* Mobile first */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+}
